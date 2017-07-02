@@ -1,1 +1,2 @@
 # maximreview.party
+yes init
