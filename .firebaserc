@@ -1,7 +1,5 @@
 {
   "projects": {
-    "default": "maximreview-party-staging",
-    "staging": "maximreview-party-staging",
-    "prod": "maximreview-party-prod"
+    "default": "maximreview-party-prod"
   }
 }
