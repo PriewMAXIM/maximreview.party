@@ -17,6 +17,7 @@
 
 	<link rel="stylesheet" href="assets/animate.css">
 	<link rel="stylesheet" href="assets/style.css">
+	<link rel="stylesheet" href="assets/toastr.min.css">
 
 <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
 <script>
@@ -85,8 +86,7 @@
               <ul class="nav navbar-nav navbar-right" >
                   <li class="active"><a href="#home">Home</a></li>
                  <li><a href="#about">About</a></li>
-                 <li><a href="#playlist">Playlist</a></li>
-                 <li><a href="#album">Albums</a></li>
+                 <li><a href="#djs">DJs</a></li>
                  <li><a href="#blogevent">Events & Blog</a></li>
                  <li><a href="#contact">Contact</a></li>
               </ul>
@@ -160,7 +160,7 @@
 <!-- About Ends -->
 
 
-<div id="album" class="releases spacer">
+<div id="djs" class="releases spacer">
 <h3><span class="glyphicon glyphicon-music"></span> DJ.s</h3>
 <div class="row">
 	<div class="col-sm-3 col-xs-12"><div class="album"><div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/uTlGcrofRPA"></iframe></div><div class="albumdetail"><h5>DJ Soda</h5><a href="https://www.youtube.com/channel/UCzxwychp2Jv_scCVwPj2Zaw" target="_blank" class="listen"><span class="glyphicon glyphicon-headphones"></span> Check her out</a></div></div></div>
@@ -173,9 +173,9 @@
 
 	<div class="col-sm-3 col-xs-12"><div class="album"><div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Kj5TlhVBg7o"></iframe></div><div class="albumdetail"><h5>BOOM BOOM CASH</h5><a href="https://www.youtube.com/channel/UCHu1d4PA99vOETiC1xDejow" target="_blank" class="listen"><span class="glyphicon glyphicon-headphones"></span> Check their channel</a></div></div></div>
 
-	<div class="col-sm-3 col-xs-12"><div class="album"><div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/lODa9f21RTM"></iframe></div><div class="albumdetail"><h5>BOT CASH</h5><a href="https://www.youtube.com/channel/UCH9yRFNyyoxbQbJQA-4WNNg" target="_blank" class="listen"><span class="glyphicon glyphicon-headphones"></span> Check him out</a></div></div></div>
+	<div class="col-sm-3 col-xs-12"><div class="album"><div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VDz8BoVGBZE"></iframe></div><div class="albumdetail"><h5>XRemixer [ Kozaclub ]</h5><a href="https://www.youtube.com/channel/UChSklDW4Ghpb60Gm8L2s5Fg" target="_blank" class="listen"><span class="glyphicon glyphicon-headphones"></span> Check him out</a></div></div></div>
 
-	<div class="col-sm-3 col-xs-12"><div class="album"><div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/lODa9f21RTM"></iframe></div><div class="albumdetail"><h5>BOT CASH</h5><a href="https://www.youtube.com/channel/UCH9yRFNyyoxbQbJQA-4WNNg" target="_blank" class="listen"><span class="glyphicon glyphicon-headphones"></span> Check him out</a></div></div></div>
+	<div class="col-sm-3 col-xs-12"><div class="album"><div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HiATrApv2nM"></iframe></div><div class="albumdetail"><h5>DJ JO SR</h5><a href="https://www.youtube.com/channel/UCxoWRQFhvdhHndFP_LS62ZA" target="_blank" class="listen"><span class="glyphicon glyphicon-headphones"></span> Check his channel</a></div></div></div>
 
 	
   </div>
@@ -273,30 +273,18 @@
 		<div class="ourblog">
 		<h3><span class="glyphicon glyphicon-book"></span> Blog</h3>
             <ul class="row">
-              <li class="row"><a href="#" data-toggle="modal" data-target="#blogdetail" class="col-xs-12 col-sm-3 col-lg-4"><img src="assets/images/3.jpg" class="img-responsive" alt="music theme" /></a>
-              <div class="blogtext col-xs-12 col-sm-9  col-lg-8"><h5><a href="#" data-toggle="modal" data-target="#blogdetail">New trends in music</a></h5>
-              <small>Posted on: Jan 1, 2014</small>
-              <p>Typewriter photo booth vinyl post-ironic, literally keffiyeh locavore tofu lomo pug Odd Future. </p>
+              <li class="row"><a href="#" data-toggle="modal" data-target="#trend_in_party" class="col-xs-12 col-sm-3 col-lg-4"><img src="assets/images/pexels-photo-173523.jpeg" class="img-responsive" alt="music theme" /></a>
+              <div class="blogtext col-xs-12 col-sm-9  col-lg-8"><h5><a href="#" data-toggle="modal" data-target="#trend_in_party">New trends in party</a></h5>
+              <small>Posted on: Jul 9, 2017</small>
+              <p>Our party never out. </p>
               </div>              
               </li>
-              <li class="row"><a href="#" data-toggle="modal" data-target="#blogdetail" class="col-xs-12 col-sm-3 col-lg-4"><img src="assets/images/4.jpg" class="img-responsive" alt="music theme" /></a>
-              <div class="blogtext col-xs-12 col-sm-9  col-lg-8"><h5><a href="#" data-toggle="modal" data-target="#blogdetail">New trends in music</a></h5>
-              <small>Posted on: Jan 1, 2014</small>
-              <p>Typewriter photo booth vinyl post-ironic, literally keffiyeh locavore tofu lomo pug Odd Future. </p>
+              <li class="row"><a href="#" data-toggle="modal" data-target="#all_events" class="col-xs-12 col-sm-3 col-lg-4"><img src="assets/images/pexels-photo-431722.jpeg" class="img-responsive" alt="music theme" /></a>
+              <div class="blogtext col-xs-12 col-sm-9  col-lg-8"><h5><a href="#" data-toggle="modal" data-target="#all_events">All kind of events</a></h5>
+              <small>Posted on: Jul 9, 2017</small>
+              <p>All events, we can!. Any kind of events, we can help you organize. even children party we can!  </p>
               </div>              
-              </li>
-              <li class="row"><a href="#" data-toggle="modal" data-target="#blogdetail" class="col-xs-12 col-sm-3 col-lg-4"><img src="assets/images/1.jpg" class="img-responsive" alt="music theme" /></a>
-              <div class="blogtext col-xs-12 col-sm-9  col-lg-8"><h5><a href="#" data-toggle="modal" data-target="#blogdetail">New trends in music</a></h5>
-              <small>Posted on: Jan 1, 2014</small>
-              <p>Typewriter photo booth vinyl post-ironic, literally keffiyeh locavore tofu lomo pug Odd Future. </p>
-              </div>              
-              </li>
-               <li class="row"><a href="#" data-toggle="modal" data-target="#blogdetail" class="col-xs-12 col-sm-3 col-lg-4"><img src="assets/images/2.jpg" class="img-responsive" alt="music theme" /></a>
-              <div class="blogtext col-xs-12 col-sm-9  col-lg-8"><h5><a href="#" data-toggle="modal" data-target="#blogdetail">New trends in music</a></h5>
-              <small>Posted on: Jan 1, 2014</small>
-              <p>Typewriter photo booth vinyl post-ironic, literally keffiyeh locavore tofu lomo pug Odd Future. </p>
-              </div>              
-              </li>          
+              </li>         
             </ul>
             </div>
 
@@ -313,10 +301,10 @@
   <div class="row">      
       <div class="col-sm-6 col-sm-offset-3 ">
       <h4>Get in touch or<br><b>Just say Hello!</b></h4>
-        <input type="text" placeholder="Name">
-        <input type="text" placeholder="Email">
-        <textarea rows="5" placeholder="Message"></textarea>
-        <button class="btn btn-warning bgcolor">Send</button>
+        <input id="contact_name" maxlength="100" type="text" placeholder="Name">
+        <input id="contact_email" maxlength="100" type="text" placeholder="Email">
+        <textarea id="contact_message" maxlength="200" rows="5" placeholder="Message"></textarea>
+        <button class="btn btn-warning bgcolor" onclick="submitcontact()">Send</button>
       </div>
   </div>
 
@@ -360,25 +348,43 @@ Copyright 2017 MAXIMReview.Party
 
 
 <!-- Modal -->
-<div class="modal fade" id="blogdetail" tabindex="-1" role="dialog">
+<div class="modal fade" id="trend_in_party" tabindex="-1" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-
-
 <div id="blog">
-<h2>New trends in music</h2>
-<small>Posted on: Jan 20, 2013</small>
+<h2>New trends in party</h2>
+<small>Posted on: Jul 9, 2017</small>
       
-      <a href="#" class="thumbnail"><img src="assets/images/1.jpg" class="img-reponsive" alt="blog" /></a>
+      <a href="#" class="thumbnail"><img src="assets/images/pexels-photo-173523.jpeg" class="img-reponsive" alt="blog" /></a>
       
       <div class="col-lg-8 col-lg-offset-2">                                                                           
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-      </div>
+      <p>We organize party for you and we know exactly what partier want because we are also partier.</p>
+      <p>Our party will be in trend, we keep trendy party in our list. but also we can manage it in anyway you want.</p>
+      </div>             
+</div>
 
-                            
+
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="all_events" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="blog2">
+<h2>All kind of events</h2>
+<small>Posted on: Jul 9, 2017</small>
+      
+      <a href="#" class="thumbnail"><img src="assets/images/pexels-photo-431722.jpeg" class="img-reponsive" alt="blog" /></a>
+      
+      <div class="col-lg-8 col-lg-offset-2">                                                                           
+      <p>From party to events, Alcohol to clean foods, We organize all kind of events for you.</p>
+      <p>Our organizer are variant, we can talk and show you what we do, Let's have fun! Yeah!</p>
+      </div>             
 </div>
 
 
@@ -394,29 +400,62 @@ Copyright 2017 MAXIMReview.Party
 
 
 
-<!-- Modal -->
-<div class="modal fade" id="albumdetail" tabindex="-1" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-        
-
-
-<h2>Crazy Fresco</h2>
-<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/24314082&amp;theme_color=000000&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=false"></iframe>
-
-
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-
-
-
   <script src="assets/scripts/jquery-3.2.1.min.js" type="text/javascript" ></script>
-  <!-- boostrap -->
   <script src="assets/bootstrap/js/bootstrap.min.js" type="text/javascript" ></script>
   <script src="assets/scripts/plugins.js" type="text/javascript"></script>
   <script src="assets/scripts/script.js" type="text/javascript"></script>
+  <script src="assets/scripts/toastr.min.js" type="text/javascript"></script>
+<script>
+function submitcontact() {
+    var contact_name = $('#contact_name').val();
+    var contact_email = $('#contact_email').val();
+    var contact_message = $('#contact_message').val();
+    toastr.options = {
+        "closeButton": true,
+        "debug": false,
+        "newestOnTop": false,
+        "progressBar": false,
+        "positionClass": "toast-bottom-full-width",
+        "preventDuplicates": false,
+        "onclick": null,
+        "showDuration": "300",
+        "hideDuration": "1000",
+        "timeOut": "4000",
+        "extendedTimeOut": "1000",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut"
+    }
 
+    if (contact_name.trim() === '' || contact_email.trim() === '' || contact_message.trim() === '') {
+        toastr.warning('Please fill all fields in the form.')
+    } else {
+        $.ajax({
+            url: 'https://us-central1-maximreview-party-prod.cloudfunctions.net/addContactInfo',
+            type: 'POST', cache: false,
+            data: { 
+                contact_name: $('#contact_name').val(), 
+                contact_email: contact_email, 
+                contact_message: $('#contact_message').val()
+            },
+            success: function(resultData) {
+                $('#contact_name').val('');$('#contact_name').blur();
+                $('#contact_email').val('');$('#contact_email').blur();
+                $('#contact_message').val('');$('#contact_message').blur();
+
+
+                toastr.success('We will contact you at ' + contact_email + ' ASAP.','Thank you!')
+            },
+            // error: function() { alert("Something went wrong"); }
+        });
+    }
+
+
+
+
+}
+</script>
 
 
 </body>
