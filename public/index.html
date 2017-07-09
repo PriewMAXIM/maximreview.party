@@ -38,23 +38,25 @@
 
 </head>
 <body>
+<div id="fb-root"></div>
 <script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '605538593167526',
-      xfbml      : true,
-      version    : 'v2.9'
-    });
-    FB.AppEvents.logPageView();
-  };
+window.fbAsyncInit = function() {
+  FB.init({
+    appId      : '605538593167526',
+    xfbml      : true,
+    version    : 'v2.9'
+  });
+  FB.AppEvents.logPageView();
+};
 
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
 </script>
 
 
@@ -151,9 +153,11 @@
 <div class="col-lg-5 col-sm-8  col-xs-12">
 <p>We serve our clients through a number of services, Organize a great party that you will never forget the night or Beach party playing the light!, We help you find cool DJs, and a lot more. Just leave a message and let's fun ;p</p>
 <blockquote>Leave a message and let's fun.</blockquote>
+<div class="fb-like" data-href="https://maximreview.party/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 </div>
+
 <div class="col-lg-3 visible-lg">
-   <div class="fb-like" data-share="true" data-width="350" data-show-faces="true">   </div>
+   
 </div>
 </div>
 </div>
